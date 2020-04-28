@@ -1,7 +1,141 @@
-// Variable Overrides 
-$yellow:  #F4A830;
-$primary:       $yellow;
 
+
+
+
+// Variable Overrides 
+
+    // General Toggle Overrides
+    $enable-rounded: false;
+    $enable-shadows: true;
+    $enable-gradients: true;
+    $enable-grid-classes: true;
+    $enable-print-styles: true;
+
+    // Color Overrides
+    $yellow:  #F4A830;
+    $gray: #333333;
+    $offwhite: #fef9f0;
+    $green: #019D49;
+    $red: #ED2224;
+    $white: #fff;
+    $primary:  $yellow;
+    $secondary: $gray;
+    $body-bg:  $offwhite;
+
+    // Font Overrides
+        
+        // Font Base
+        $font-family-sans-serif:     "Lato", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+        $font-family-serif:  'Frank Ruhl Libre', serif;
+        $font-family-base:            $font-family-serif;
+        $font-size-base:              .9rem; // Assumes the browser default, typically `16px`
+        $font-size-lg:                $font-size-base * 1.25;
+        $font-weight-bold:            900;
+           
+            // Headings
+            $headings-font-family:        $font-family-sans-serif;
+            $headings-font-weight:        900;
+            $headings-line-height:        1.2 !default;
+            $headings-color:              $secondary;
+            $h1-font-size:                $font-size-base * 2;
+            $h2-font-size:                $font-size-base * 1.75;
+            $h3-font-size:                $font-size-base * 1.5;
+            $h4-font-size:                $font-size-base * 1.5;
+            $h5-font-size:                $font-size-base * 1.25;
+            $h6-font-size:                $font-size-base;
+            $h1-font-size:                $font-size-base * 2.5;
+            
+            // Lead Font (subhead)
+            $lead-font-size:              $font-size-base;
+            $lead-font-weight:            300 !default;
+            .lead {
+                font-weight: $lead-font-weight;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+    
+    
+    // Button Overrides
+            
+            // Button Font
+            $input-btn-font-family: $font-family-sans-serif;
+
+            // Button Radius
+            $border-radius:     0px;
+            $border-radius-lg:  0px;
+            $border-radius-sm:  0px;
+
+            // Button Padding
+            $input-btn-padding-y:   .5rem;
+            $input-btn-padding-x:   1.75rem;
+            $input-btn-padding-y-sm:   .5rem;
+            $input-btn-padding-x-sm:   1.75rem;
+
+            // Button Colors 
+            
+
+        // Link Overrides
+
+            // Nav Overrides
+
+                // Nav Padding
+                $nav-link-padding-y:                .5rem !default;
+                $nav-link-padding-x:                1rem !default;
+
+
+
+// Custom Mixins
+    // Background Image solid overlay
+    @mixin solid-overlay($overlay-color, $backgroundURL, $background-min-height) {
+        background-image: linear-gradient(
+            90deg, 
+            $overlay-color 0%, 
+            $overlay-color 100%),
+            url($backgroundURL);
+        height: $background-min-height;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    // Background Image Gradient Overlay from 0-50%
+    @mixin gradient-overlay($color-left, $color-right, $backgroundURL, $background-min-height) {
+        background-image: linear-gradient(
+            90deg, 
+            $color-left 0%, 
+            $color-right 75%, 
+            rgba(0,0,0,0) 100%),
+            url($backgroundURL);
+        height: $background-min-height;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+// Custom Styles
+
+    // Hero Sections
+    .title-section {
+        @include gradient-overlay(rgba(0,0,0,.75), rgba(0,0,0,.01), "../images/title-section-chef-made.jpg", 70vh);
+    }
+    .title-secondary {
+        @include solid-overlay(rgba(244, 169, 48, 0.85) , "../images/title-section-chef-made.jpg", 100px);
+        display: block;
+    }
+
+    // Button Styles
+     .btn {
+         text-transform: uppercase;
+         letter-spacing: 2px;
+     }
+
+     .btn-primary {
+         color: #fff !important;
+     }
+
+     
+
+                
 
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
