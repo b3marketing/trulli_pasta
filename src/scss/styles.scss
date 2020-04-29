@@ -35,7 +35,7 @@
             // Headings
             $headings-font-family:        $font-family-sans-serif;
             $headings-font-weight:        900;
-            $headings-line-height:        1.2 !default;
+            $headings-line-height:        1.2;
             $headings-color:              $secondary;
             $h1-font-size:                $font-size-base * 2;
             $h2-font-size:                $font-size-base * 1.75;
@@ -47,12 +47,23 @@
             
             // Lead Font (subhead)
             $lead-font-size:              $font-size-base;
-            $lead-font-weight:            300 !default;
+            $lead-font-weight:            300;
             .lead {
                 font-weight: $lead-font-weight;
                 text-transform: uppercase;
                 letter-spacing: 2px;
             }
+
+            // Display Overrides
+            $display1-size:               2.25rem;
+            $display2-size:               2rem;
+            $display3-size:               1.75rem;
+            $display4-size:               1.5rem;
+
+            $display1-weight:             900;
+            $display2-weight:             900;
+            $display3-weight:             900;
+            $display4-weight:             900;
     
     
     // Button Overrides
@@ -79,12 +90,25 @@
             // Nav Overrides
 
                 // Nav Padding
-                $nav-link-padding-y:                .5rem !default;
-                $nav-link-padding-x:                1rem !default;
+                $nav-link-padding-y:                .5rem;
+                $nav-link-padding-x:                1rem;
 
 
 
 // Custom Mixins
+@mixin background-image-center($background-min-height) {
+    height: $background-min-height;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    // Background Image
+    @mixin full-background-image($backgroundURL, $background-min-height) {
+        background-image: url($backgroundURL);
+        @include background-image-center($background-min-height);
+    }
+
     // Background Image solid overlay
     @mixin solid-overlay($overlay-color, $backgroundURL, $background-min-height) {
         background-image: linear-gradient(
@@ -92,10 +116,8 @@
             $overlay-color 0%, 
             $overlay-color 100%),
             url($backgroundURL);
-        height: $background-min-height;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+            @include background-image-center($background-min-height);
+
     }
 
     // Background Image Gradient Overlay from 0-50%
@@ -106,10 +128,8 @@
             $color-right 75%, 
             rgba(0,0,0,0) 100%),
             url($backgroundURL);
-        height: $background-min-height;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+            @include background-image-center($background-min-height);
+
     }
 
 // Custom Styles
@@ -119,8 +139,35 @@
         @include gradient-overlay(rgba(0,0,0,.75), rgba(0,0,0,.01), "../images/title-section-chef-made.jpg", 70vh);
     }
     .title-secondary {
-        @include solid-overlay(rgba(244, 169, 48, 0.85) , "../images/title-section-chef-made.jpg", 100px);
+        @include solid-overlay(rgba(244, 169, 48, 0.8) , "../images/title-secondary-pasta.jpg", 100px);
         display: block;
+    }
+
+    .center-content-section-white {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: $white;
+        img {
+            width: 100%;
+        }
+    }
+
+    .center-content-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        img {
+            width: 100%;
+        }
+    }
+
+    // Half Content Sections
+    .better-pasta-section {
+        @include full-background-image("../images/semolina-wheat-background.jpg", 50vh);
+    }
+    .trulli-homemade-section {
+        img {
+            max-width: 100%;
+        }
     }
 
     // Button Styles
@@ -130,7 +177,11 @@
      }
 
      .btn-primary {
-         color: #fff !important;
+         color: $white !important;
+     }
+
+     .btn-light:hover, .btn-light:active, .btn-light:focus {
+        background: $offwhite !important;
      }
 
      
