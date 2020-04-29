@@ -7,12 +7,13 @@
     // General Toggle Overrides
     $enable-rounded: false;
     $enable-shadows: true;
-    $enable-gradients: true;
+    $enable-gradients: false;
     $enable-grid-classes: true;
     $enable-print-styles: true;
 
     // Color Overrides
     $yellow:  #F4A830;
+    $light-yellow: #e4be6e;
     $gray: #333333;
     $offwhite: #fef9f0;
     $green: #019D49;
@@ -21,6 +22,11 @@
     $primary:  $yellow;
     $secondary: $gray;
     $body-bg:  $offwhite;
+
+    // Navigation Overrides
+    $nav-link-padding-x:                1.5rem !default;
+    $navbar-nav-link-padding-x:   1.5rem;
+
 
     // Font Overrides
         
@@ -31,6 +37,7 @@
         $font-size-base:              .9rem; // Assumes the browser default, typically `16px`
         $font-size-lg:                $font-size-base * 1.25;
         $font-weight-bold:            900;
+        
            
             // Headings
             $headings-font-family:        $font-family-sans-serif;
@@ -55,8 +62,8 @@
             }
 
             // Display Overrides
-            $display1-size:               2.25rem;
-            $display2-size:               2rem;
+            $display1-size:               3.5rem;
+            $display2-size:               2.25rem;
             $display3-size:               1.75rem;
             $display4-size:               1.5rem;
 
@@ -96,73 +103,78 @@
 
 
 // Custom Mixins
-@mixin background-image-center($background-min-height) {
-    height: $background-min-height;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-    // Background Image
-    @mixin full-background-image($backgroundURL, $background-min-height) {
-        background-image: url($backgroundURL);
-        @include background-image-center($background-min-height);
+    // Centered Background Basics
+    @mixin background-image-center {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    @mixin section-padding($sec-padding) {
+        padding-top: $sec-padding;
+        padding-bottom: $sec-padding;
     }
 
-    // Background Image solid overlay
-    @mixin solid-overlay($overlay-color, $backgroundURL, $background-min-height) {
-        background-image: linear-gradient(
-            90deg, 
-            $overlay-color 0%, 
-            $overlay-color 100%),
-            url($backgroundURL);
-            @include background-image-center($background-min-height);
+        // Background Image
+        @mixin full-background-image($backgroundURL) {
+            background-image: url($backgroundURL);
+            @include background-image-center;
+        }
 
-    }
+        // Background Image solid overlay. Needs Color, URL Variables
+        @mixin solid-overlay($overlay-color, $backgroundURL) {
+            background-image: linear-gradient(
+                90deg, 
+                $overlay-color 0%, 
+                $overlay-color 100%),
+                url($backgroundURL);
+                @include background-image-center;
+        }
 
-    // Background Image Gradient Overlay from 0-50%
-    @mixin gradient-overlay($color-left, $color-right, $backgroundURL, $background-min-height) {
-        background-image: linear-gradient(
-            90deg, 
-            $color-left 0%, 
-            $color-right 75%, 
-            rgba(0,0,0,0) 100%),
-            url($backgroundURL);
-            @include background-image-center($background-min-height);
+        // Background Image Gradient Overlay from 0-50%. Needs Color left, right, URL Variables
+        @mixin gradient-overlay($color-left, $color-right, $backgroundURL) {
+            background-image: linear-gradient(
+                90deg, 
+                $color-left 0%, 
+                $color-right 75%, 
+                rgba(0,0,0,0) 100%),
+                url($backgroundURL);
+                @include background-image-center;
+        }
 
-    }
+    // Box-Shadow 
+        @mixin hover-shadow{
+            box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15) !important;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+        }
+
+
 
 // Custom Styles
 
     // Hero Sections
     .title-section {
-        @include gradient-overlay(rgba(0,0,0,.75), rgba(0,0,0,.01), "../images/title-section-chef-made.jpg", 70vh);
+        @include gradient-overlay(rgba(0,0,0,.75), rgba(0,0,0,.01), "../images/title-section-chef-made.jpg");
+        @include section-padding(200px);
     }
     .title-secondary {
-        @include solid-overlay(rgba(244, 169, 48, 0.8) , "../images/title-secondary-pasta.jpg", 100px);
-        display: block;
+        @include solid-overlay(rgba(244, 169, 48, 0.8) , "../images/title-secondary-pasta.jpg");
+        @include section-padding(25px);
     }
-
-    .center-content-section-white {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        background-color: $white;
-        img {
-            width: 100%;
-        }
-    }
-
     .center-content-section {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        @include section-padding(125px);
         img {
             width: 100%;
         }
     }
-
-    // Half Content Sections
+    .section-white {
+        background-color: $white;
+    }
     .better-pasta-section {
-        @include full-background-image("../images/semolina-wheat-background.jpg", 50vh);
+        background-image: url("../images/semolina-wheat-background.jpg");
+        @include background-image-center;
+        @include section-padding(150px);
     }
     .trulli-homemade-section {
         img {
@@ -170,23 +182,65 @@
         }
     }
 
+    // Navigation 
+    nav {
+        background-color: $offwhite;
+    }
+
     // Button Styles
      .btn {
          text-transform: uppercase;
          letter-spacing: 2px;
      }
-
      .btn-primary {
          color: $white !important;
      }
-
+     .btn-light {
+        background: $white !important;
+    }
      .btn-light:hover, .btn-light:active, .btn-light:focus {
         background: $offwhite !important;
      }
 
-     
+
+     // Text Styles
+     .sans-serif {
+        font-family: $font-family-sans-serif;
+     }
+
+
+
+     // Color Styles
+     .red {
+        color: $red;
+     }
+     .green {
+         color: $green;
+     }
+
+     .light-yellow {
+         color: $light-yellow;
+     }
 
                 
+     // Products Styles
+    .product-display {
+        .product-card {
+            .card-footer {
+                height: auto;
+            }
+            .btn {
+                margin-bottom: -55px;
+            }
+        }
+    }
+
+    // Shadow Hover
+    .shadow:hover, .shadow:focus {
+        @include hover-shadow;
+    }
+
+
 
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
