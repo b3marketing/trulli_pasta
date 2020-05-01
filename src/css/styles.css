@@ -42,6 +42,16 @@ header, section, footer, aside, nav, main, article, figure {
 .trulli-homemade-section img {
   max-width: 100%; }
 
+.page-title-template {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../images/semolina-wheat-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 250px; }
+
 nav {
   background-color: #fef9f0; }
 

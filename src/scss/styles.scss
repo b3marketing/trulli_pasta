@@ -184,6 +184,14 @@ header, section, footer, aside, nav, main, article, figure {
         }
     }
 
+    .page-title-template {
+        @include solid-overlay(rgba(0, 0, 0, 0.2) , "../images/semolina-wheat-background.jpg");
+        @include background-image-center;
+        padding-top: 250px;
+    }
+
+
+
     // Navigation 
     nav {
         background-color: $offwhite;
