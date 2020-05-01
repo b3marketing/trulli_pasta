@@ -26,6 +26,7 @@
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.0",
     "npx": "^10.2.2",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "scrollreveal": "^4.0.6"
   }
 }

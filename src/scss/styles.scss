@@ -24,8 +24,8 @@
     $body-bg:  $offwhite;
 
     // Navigation Overrides
-    $nav-link-padding-x:                1.5rem !default;
-    $navbar-nav-link-padding-x:   1.5rem;
+    $nav-link-padding-x:                1.25rem !default;
+    $navbar-nav-link-padding-x:   1rem;
 
 
     // Font Overrides
@@ -148,15 +148,17 @@
             -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
             transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
         }
-
+ 
 
 
 // Custom Styles
-
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+  }
     // Hero Sections
     .title-section {
         @include gradient-overlay(rgba(0,0,0,.75), rgba(0,0,0,.01), "../images/title-section-chef-made.jpg");
-        @include section-padding(200px);
+        @include section-padding(125px);
     }
     .title-secondary {
         @include solid-overlay(rgba(244, 169, 48, 0.8) , "../images/title-secondary-pasta.jpg");
@@ -188,9 +190,12 @@
     }
 
     // Button Styles
-     .btn {
+     .btn, button {
          text-transform: uppercase;
          letter-spacing: 2px;
+     }
+     button {
+
      }
      .btn-primary {
          color: $white !important;
@@ -202,10 +207,16 @@
         background: $offwhite !important;
      }
 
+    .btn-green {
+        background: $green !important;
+        color: $white !important;
+        border-color: $green !important;
+    }
+
 
      // Text Styles
      .sans-serif {
-        font-family: $font-family-sans-serif;
+        font-family: $font-family-sans-serif !important;
      }
 
 
