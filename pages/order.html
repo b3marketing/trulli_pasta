@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
-        <title>Bootstrap 4 Layout</title>
+        <title>Trulli Pasta - Semolina</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body>
+    <body class="ingredients-page">
 
        <!-- Navigation //////////////////////////////////////////////////////////////// -->
        <header>
@@ -24,8 +24,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
+                    <ul class="navbar-nav ml-auto text-center text-lg-left">
+                        <li class="nav-item ">
                             <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/pages/order.html">Order</a>
                         </li>
                         <li class="nav-item">
@@ -42,7 +42,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/pages/loginregister.html">Login/Register</a>
-                        </li>
+                        </li> 
                         <li class="nav-item pt-3 pt-lg-0 pb-3 pb-lg-0">
                             <a class="btn btn-green ml-lg-4 shadow "><i class="fa fa-shopping-cart mr-1"></i>Cart</a>
                         </li>
@@ -52,19 +52,151 @@
         </header>       
 
         <!-- Content //////////////////////////////////////////////////////////////// -->
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
+            <div class="container-fluid"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center my-5">
+                            <h1 class="mb-1  display-1 mb-5">
+                                Order
+                            </h1>
+                            <h2 class="display-2"> Select your sauce!</h2>
+                            <p class="mb-3">
+                                Each sauce package is 16oz and perfectly complements one pasta package. Typically, one meal will feed two adults.  
+                            </p>                       
+                        </div>
+                    </div>
+                </div>  
+            </div>
+                <div class="container p-0">
+                    <div class="card-deck product-display">
+                        <div class="row mb-lg-3 mx-0"> <!-- Card Display Row -->
+                            <div class="col-12 col-md-6 col-lg-3  mb-5"> <!-- Card #1 -->
+                                    <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
+                                        <img class="card-img-top border-0" src="/src/images/products/sauces/pesto.png" alt="Card image cap">
+                                        <div class="card-body mb-0 pb-0">
+                                            <h5 class="card-title">Pesto</h5>
+                                            <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
+                                        </div>
+                                        <div class="card-footer border-0 my-0 py-0 bg-transparent ">
+                                            <p class="text-center border-0">
+                                                <a class="btn btn-primary shadow btn-sm stretched-link" 
+                                                        href="#" 
+                                                        role="button" 
+                                                        data-toggle="modal" 
+                                                        data-target="#orderModal" 
+                                                        data-product="Pesto Sauce" 
+                                                        data-price="6.67"
+                                                        data-allergies="Diary Free / Gluten Free"
+                                                        data-description="Delicious pesto sauce made with Basil, Garlic, Pine Nuts, Parmigiano-Reggiano Cheese and Olive Oil."
+                                                        data-ingredientsImage="/src/images/products/sauces/pesto-ingredients.jpg"
+                                                > <!-- Data Variables passed to Modal -->
+                                                    Order
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  mb-5"> <!-- Card #2 -->
+                                <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
+                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto.png" alt="Card image cap">
+                                    <div class="card-body mb-0 pb-0">
+                                        <h5 class="card-title">Pesto</h5>
+                                        <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
+                                    </div>
+                                    <div class="card-footer border-0 my-0 py-0 bg-transparent ">
+                                        <p class="text-center border-0"><a class="btn btn-primary shadow btn-sm stretched-link" href="#" role="button">Order</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  mb-5"> <!-- Card #3 -->
+                                <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
+                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto.png" alt="Card image cap">
+                                    <div class="card-body mb-0 pb-0">
+                                        <h5 class="card-title">Pesto</h5>
+                                        <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
+                                    </div>
+                                    <div class="card-footer border-0 my-0 py-0 bg-transparent ">
+                                        <p class="text-center border-0"><a class="btn btn-primary shadow btn-sm stretched-link" href="#" role="button">Order</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  mb-5"> <!-- Card #4 -->
+                                <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
+                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto.png" alt="Card image cap">
+                                    <div class="card-body mb-0 pb-0">
+                                        <h5 class="card-title">Pesto</h5>
+                                        <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
+                                    </div>
+                                    <div class="card-footer border-0 my-0 py-0 bg-transparent ">
+                                        <p class="text-center border-0"><a class="btn btn-primary shadow btn-sm stretched-link" href="#" role="button">Order</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        </div>
+                    </div>
+                </div>
+            </div>
 
-         <!-- Footer //////////////////////////////////////////////////////////////// -->
-       <footer class="bg-primary text-white">
+
+
+        <!-- Modal -->
+            <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg border-0" role="document">
+                  <div class="modal-content border-0">
+                    <div class="modal-header border-0">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body border-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <img class="border-0" src="/src/images/products/sauces/pesto.png" alt="Ingredients">
+                                    <h2 class="display-3 mt-4 modal-title">Product Title</h2>
+                                    <span class="sans-serif display-4">
+                                        <span class="price">price</span> / Meal
+                                    </span>
+                                    <span class="lead text-sm">
+                                        Diary Free / Gluten Free
+                                    </span>
+                                    <p>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <h2 class="display-3"> Pick your pasta!</h2>
+                                    <p class="mb-3">
+                                        Choose the number of pasta/sauce combinations you want to pair with *productName*!                                    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-light shadow" data-dismiss="modal">Add & Keep Shopping</button>
+                        <button type="button" class="btn btn-green shadow">Check Out</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+   
+
+        <!-- Footer //////////////////////////////////////////////////////////////// -->
+       <footer class="bg-primary text-white text-center text-lg-left">
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-3 mb-3">
-                    <img src="src/images/trulli-logo-horizontal-white.png" width="150" height="50" alt="">
+                <div class="col-12 col-lg-3 mb-3">
+                    <img src="/src/images/trulli-logo-horizontal-white.png" width="150" height="50" alt="">
                     <p class="small mt-3 ml-2 sans-serif">© TRULLI PASTA 2020</p>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-12 col-lg-2 mb-3">
                     <ul class="list-unstyled text-white">
                         <li class="mb-3">
                             <a class="text-white sans-serif" href="/index.html">Home</a>
@@ -83,24 +215,24 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-12 col-lg-2 mb-3">
                     <div class="row">
                         <a class="col-12 mb-3 sans-serif"><i class="fa fa-facebook text-center mr-2"></i>Facebook</a>
                         <a class="col-12 mb-3 sans-serif"><i class="fa fa-twitter text-center mr-2"></i>Twitter</a>
                         <a class="col-12 mb-3 sans-serif"><i class="fa fa-instagram  text-center mr-2"></i>Instagram</a>
                     </div>
                 </div>
-                <div class="col-md-3 mb-3 ">
+                <div class="col-12 col-lg-3 mb-3 ">
                     <p class="sans-serif">Subscribe to our newsletter</p>
                     <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label sr-only">Email</label>
-                        <div class="col-sm-10">
+                        <label for="inputEmail3" class="col-form-label sr-only">Email</label>
+                        <div class="col-8 col-lg-10 mx-auto ml-lg-0">
                           <input type="email" class="form-control sans-serif" id="inputEmail3" placeholder="Email">
                           <button type="submit" class="btn-sm btn-light mt-2 sans-serif text-uppercase">Submit</button>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-12 col-lg-2 mb-3">
                     <p class="text-white sans-serif">123 Address Lane, Naples FL, 33457</p>
                     <p><a class="text-white sans-serif" href="tel:+1-555-555-5555">555-555-5555</a></p>
                     <p><a class="text-white sans-serif" href="mailto:info@trullipasta.com">info@trullipasta.com</a></p>

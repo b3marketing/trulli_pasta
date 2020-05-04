@@ -19,6 +19,7 @@
     $green: #019D49;
     $red: #ED2224;
     $white: #fff;
+    $black:    #000 !default;
     $primary:  $yellow;
     $secondary: $gray;
     $body-bg:  $offwhite;
@@ -99,6 +100,13 @@
                 // Nav Padding
                 $nav-link-padding-y:                .5rem;
                 $nav-link-padding-x:                1rem;
+        
+        // Modal Overrides
+        $modal-backdrop-bg:                 $white !default;
+        $modal-backdrop-opacity:            .8 !default;
+        $modal-content-box-shadow-xs:       0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+        $modal-content-box-shadow-sm-up:    0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+        $modal-inner-padding:               2rem !default;
 
 
 
@@ -183,13 +191,19 @@ header, section, footer, aside, nav, main, article, figure {
             max-width: 100%;
         }
     }
-
     .page-title-template {
-        @include solid-overlay(rgba(0, 0, 0, 0.2) , "../images/semolina-wheat-background.jpg");
         @include background-image-center;
         padding-top: 250px;
     }
-
+    .ingredients-title {
+        @include solid-overlay(rgba(0, 0, 0, 0.2) , "/src/images/semolina-wheat-background.jpg");
+    }
+    .about-title {
+        @include solid-overlay(rgba(0, 0, 0, 0.2) , "/src/images/coastal-italian-town.jpg");
+    }
+    .semolina-title {
+        @include solid-overlay(rgba(0, 0, 0, 0.2) , "/src/images/semolina-wheat-in-field.jpg");
+    }
 
 
     // Navigation 
@@ -254,9 +268,20 @@ header, section, footer, aside, nav, main, article, figure {
         }
     }
 
+
     // Shadow Hover
     .shadow:hover, .shadow:focus {
         @include hover-shadow;
+    }
+
+
+    // Order Modal
+    #orderModal {
+        .modal-body {
+            img {
+                width: 100%;
+            }
+        }
     }
 
 
