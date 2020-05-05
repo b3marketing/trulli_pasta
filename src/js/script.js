@@ -17,5 +17,4 @@ $('#orderModal').on('show.bs.modal', function (event) {
     modal.find('.price').text(price)
     modal.find('.allergies').text(allergies)
     modal.find('.description').text(description)
-    modal.find('img').attr(ingredientsImage)
   })
