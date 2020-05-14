@@ -16,40 +16,43 @@
 
        <!-- Navigation //////////////////////////////////////////////////////////////// -->
        <header>
-            <nav class="navbar sticky-top navbar-expand-lg shadow navbar-light">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="/src/images/trulli-logo-horizontal.png" width="150" height="50" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto text-center text-lg-left">
-                        <li class="nav-item ">
-                            <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/pages/order.html">Order</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/pages/about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/pages/ingredients.html">Ingredients</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/pages/semolina.html">What is Semolina?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/pages/contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/pages/loginregister.html">Login/Register</a>
-                        </li> 
-                        <li class="nav-item pt-3 pt-lg-0 pb-3 pb-lg-0">
-                            <a class="btn btn-green ml-lg-4 shadow "><i class="fa fa-shopping-cart mr-1"></i>Cart</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>       
+        <nav class="navbar sticky-top navbar-expand-lg shadow navbar-light">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/src/images/trulli-logo-horizontal.png" width="150" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-center text-lg-left">
+                    <li class="nav-item ">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/ingredients.html">Ingredients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/semolina.html">What is Semolina?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/loginregister.html">Login/Register</a>
+                    </li> 
+                    <li class="nav-item pt-3 pt-lg-0 pb-3 pb-lg-0">
+                        <a class="btn btn-green ml-lg-4 shadow "><i class="fa fa-shopping-cart mr-1"></i>Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>        
 
         <!-- Content //////////////////////////////////////////////////////////////// -->
         <div class="container-fluid p-0">
@@ -73,7 +76,7 @@
                         <div class="row mb-lg-3 mx-0"> <!-- Card Display Row -->
                             <div class="col-12 col-md-6 col-lg-4  mb-5"> <!-- Card #1 -->
                                     <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
-                                        <img class="card-img-top border-0" src="/src/images/products/sauces/pesto.png" alt="Card image cap">
+                                        <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.png" alt="Card image cap">
                                         <div class="card-body mb-0 pb-0">
                                             <h5 class="card-title">Pesto</h5>
                                             <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
@@ -85,6 +88,7 @@
                                                         role="button" 
                                                         data-toggle="modal" 
                                                         data-target="#orderModal" 
+                                                        data-productID="dynamicallygenerated"
                                                         data-product="Pesto Sauce" 
                                                         data-price="6.67"
                                                         data-allergies="Diary Free / Gluten Free"
@@ -98,9 +102,9 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4  mb-5"> <!-- Card #1 -->
                                 <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
-                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto.png" alt="Card image cap">
+                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.png" alt="Card image cap">
                                     <div class="card-body mb-0 pb-0">
-                                        <h5 class="card-title">Marinara Sauces</h5>
+                                        <h5 class="card-title">Pesto</h5>
                                         <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
                                     </div>
                                     <div class="card-footer border-0 my-0 py-0 bg-transparent ">
@@ -111,11 +115,10 @@
                                                     data-toggle="modal" 
                                                     data-target="#orderModal" 
                                                     data-productID="dynamicallygenerated"
-                                                    data-product="Marinara Sauce" 
-                                                    data-price="7.88"
+                                                    data-product="Pesto Sauce" 
+                                                    data-price="6.67"
                                                     data-allergies="Diary Free / Gluten Free"
                                                     data-description="Delicious pesto sauce made with Basil, Garlic, Pine Nuts, Parmigiano-Reggiano Cheese and Olive Oil."
-                                                    data-imgURl=""
                                             > <!-- Data Variables passed to Modal -->
                                                 Order
                                             </a>
@@ -125,7 +128,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4  mb-5"> <!-- Card #1 -->
                                 <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
-                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto.png" alt="Card image cap">
+                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.png" alt="Card image cap">
                                     <div class="card-body mb-0 pb-0">
                                         <h5 class="card-title">Pesto</h5>
                                         <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
@@ -137,8 +140,9 @@
                                                     role="button" 
                                                     data-toggle="modal" 
                                                     data-target="#orderModal" 
-                                                    data-product="Marinara Sauce" 
-                                                    data-price="7.88"
+                                                    data-productID="dynamicallygenerated"
+                                                    data-product="Pesto Sauce" 
+                                                    data-price="6.67"
                                                     data-allergies="Diary Free / Gluten Free"
                                                     data-description="Delicious pesto sauce made with Basil, Garlic, Pine Nuts, Parmigiano-Reggiano Cheese and Olive Oil."
                                             > <!-- Data Variables passed to Modal -->
@@ -150,7 +154,7 @@
                             </div>  
                             <div class="col-12 col-md-6 col-lg-4  mb-5"> <!-- Card #1 -->
                                 <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
-                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto.png" alt="Card image cap">
+                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.png" alt="Card image cap">
                                     <div class="card-body mb-0 pb-0">
                                         <h5 class="card-title">Pesto</h5>
                                         <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
@@ -162,8 +166,9 @@
                                                     role="button" 
                                                     data-toggle="modal" 
                                                     data-target="#orderModal" 
-                                                    data-product="Marinara Sauce" 
-                                                    data-price="7.88"
+                                                    data-productID="dynamicallygenerated"
+                                                    data-product="Pesto Sauce" 
+                                                    data-price="6.67"
                                                     data-allergies="Diary Free / Gluten Free"
                                                     data-description="Delicious pesto sauce made with Basil, Garlic, Pine Nuts, Parmigiano-Reggiano Cheese and Olive Oil."
                                             > <!-- Data Variables passed to Modal -->
@@ -175,7 +180,7 @@
                             </div>  
                             <div class="col-12 col-md-6 col-lg-4  mb-5"> <!-- Card #1 -->
                                 <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
-                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto.png" alt="Card image cap">
+                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.png" alt="Card image cap">
                                     <div class="card-body mb-0 pb-0">
                                         <h5 class="card-title">Pesto</h5>
                                         <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
@@ -187,8 +192,9 @@
                                                     role="button" 
                                                     data-toggle="modal" 
                                                     data-target="#orderModal" 
-                                                    data-product="Marinara Sauce" 
-                                                    data-price="7.88"
+                                                    data-productID="dynamicallygenerated"
+                                                    data-product="Pesto Sauce" 
+                                                    data-price="6.67"
                                                     data-allergies="Diary Free / Gluten Free"
                                                     data-description="Delicious pesto sauce made with Basil, Garlic, Pine Nuts, Parmigiano-Reggiano Cheese and Olive Oil."
                                             > <!-- Data Variables passed to Modal -->
@@ -198,6 +204,59 @@
                                     </div>
                                 </div>
                             </div>  
+                            <div class="col-12 col-md-6 col-lg-4  mb-5"> <!-- Card #1 -->
+                                <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
+                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.png" alt="Card image cap">
+                                    <div class="card-body mb-0 pb-0">
+                                        <h5 class="card-title">Pesto</h5>
+                                        <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
+                                    </div>
+                                    <div class="card-footer border-0 my-0 py-0 bg-transparent ">
+                                        <p class="text-center border-0">
+                                            <a class="btn btn-primary shadow btn-sm stretched-link" 
+                                                    href="#" 
+                                                    role="button" 
+                                                    data-toggle="modal" 
+                                                    data-target="#orderModal" 
+                                                    data-productID="dynamicallygenerated"
+                                                    data-product="Pesto Sauce" 
+                                                    data-price="6.67"
+                                                    data-allergies="Diary Free / Gluten Free"
+                                                    data-description="Delicious pesto sauce made with Basil, Garlic, Pine Nuts, Parmigiano-Reggiano Cheese and Olive Oil."
+                                            > <!-- Data Variables passed to Modal -->
+                                                Order
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="col-12 col-md-6 col-lg-4  mb-5"> <!-- Card #1 -->
+                                <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
+                                    <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.png" alt="Card image cap">
+                                    <div class="card-body mb-0 pb-0">
+                                        <h5 class="card-title">Pesto</h5>
+                                        <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
+                                    </div>
+                                    <div class="card-footer border-0 my-0 py-0 bg-transparent ">
+                                        <p class="text-center border-0">
+                                            <a class="btn btn-primary shadow btn-sm stretched-link" 
+                                                    href="#" 
+                                                    role="button" 
+                                                    data-toggle="modal" 
+                                                    data-target="#orderModal" 
+                                                    data-productID="dynamicallygenerated"
+                                                    data-product="Pesto Sauce" 
+                                                    data-price="6.67"
+                                                    data-allergies="Diary Free / Gluten Free"
+                                                    data-description="Delicious pesto sauce made with Basil, Garlic, Pine Nuts, Parmigiano-Reggiano Cheese and Olive Oil."
+                                            > <!-- Data Variables passed to Modal -->
+                                                Order
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>  
+
                             
                         </div>
 
@@ -216,16 +275,22 @@
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
+                      <br />
+
                     </div>
                     <div class="modal-body border-0">
                         <div class="container-fluid">
+                            <div id="modal-alert" class="alert alert-success" style="display: none;" role="alert">
+                                One <span class="modal-title">*productName*</span> added to the cart! 
+                              </div>
                             <div class="row">
+
                                 <div class="col-12 col-md-6">
-                                    <img class="border-0" src="/src/images/products/sauces/pesto.png" alt="Ingredients">
+                                    <div class=""></div><img class="border-0" src="/src/images/products/sauces/pesto/pesto-ingredients.jpg" alt="Ingredients">
                                     <h2 class="display-3 mt-4 modal-title">Product Title</h2>
-                                    <span class="sans-serif display-4">
+                                    <p class="sans-serif display-4">
                                         <span class="price">price</span> / Meal
-                                    </span>
+                                    </p>
                                     <span class="lead text-sm">
                                         Diary Free / Gluten Free
                                     </span>
@@ -235,15 +300,15 @@
                                 <div class="col-12 col-md-6">
                                     <h2 class="display-3"> Pick your pasta!</h2>
                                     <p class="mb-3">
-                                        Choose the number of pasta/sauce combinations you want to pair with *productName*!                                    
+                                        Choose the number of pasta/sauce combinations you want to pair with <span class="modal-title">*productName*</span>.                                  
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer border-0">
-                        <button type="button" class="btn btn-light shadow" data-dismiss="modal">Add & Keep Shopping</button>
-                        <button type="button" class="btn btn-green shadow">Check Out</button>
+                        <button type="button" class="btn btn-light shadow" data-dismiss="modal">Keep Shopping</button>
+                        <button type="button" id="add-to-cart" class="btn btn-green shadow">Add to Cart</button>
                     </div>
                   </div>
                 </div>
@@ -268,16 +333,16 @@
                             <a class="text-white sans-serif" href="/index.html">Home</a>
                         </li>
                         <li class="mb-3">
-                            <a class="text-white sans-serif" href="/pages/about.html">About</a>
+                            <a class="text-white sans-serif" href="/about.html">About</a>
                         </li>
                         <li class="mb-3">
-                            <a class="text-white sans-serif" href="/pages/order.html">Order</a>
+                            <a class="text-white sans-serif" href="/order.html">Order</a>
                         </li>
                         <li class="mb-3">
-                            <a class="text-white sans-serif" href="/pages/order.html">Contact</a>
+                            <a class="text-white sans-serif" href="/order.html">Contact</a>
                         </li>
                         <li class="mb-3">
-                            <a class="text-white sans-serif" href="/pages/termsconditions.html">Terms & Conditions</a>
+                            <a class="text-white sans-serif" href="/termsconditions.html">Terms & Conditions</a>
                         </li>
                     </ul>
                 </div>
