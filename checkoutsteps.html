@@ -23,217 +23,463 @@
 
         <!-- Content //////////////////////////////////////////////////////////////// -->
         
-        <div class="multisteps-form mb-5">
+        <div class="multisteps-form mb-5 container">
             <!--progress bar-->
             <div class="row">
               <div class="col-12 col-md-6 col-lg-5 ml-auto mr-auto mb-5">
                 <div class="multisteps-form__progress">
                   <button class="multisteps-form__progress-btn sans-serif js-active" type="button" title="User Info">Cart</button>
-                  <button class="multisteps-form__progress-btn sans-serif" type="button" title="Address">Address</button>
-                  <button class="multisteps-form__progress-btn sans-serif" type="button" title="Order Info">Order Info</button>
-                  <button class="multisteps-form__progress-btn sans-serif" type="button" title="Comments">Comments        </button>
+                  <button class="multisteps-form__progress-btn sans-serif" type="button" title="Address">Register</button>
+                  <button class="multisteps-form__progress-btn sans-serif" type="button" title="Order Info">Payment</button>
+                  <button class="multisteps-form__progress-btn sans-serif" type="button" title="Comments">Confirm</button>
                 </div>
               </div>
             </div>
             <!--form panels-->
             <div class="row">
-              <div class="col-12 col-lg-8 m-auto pb-5">
+              <div class="col-12 col-lg-12 m-auto pb-5">
                 <form class="multisteps-form__form">
                   <!--single form panel-->
-                  <div class="multisteps-form__panel  p-5 shadow rounded bg-white js-active" data-animation="scaleIn">                    <div class="multisteps-form__content">
-                        <div class="col-lg-12 col-md-12 col-12 p-0 section-white">
-                            <h2 class="display-2 mb-2 text-center">Shopping Cart</h2>
-                            <p class="mb-5 text-center sans-serif">
-                                <i class="sans-serif green font-weight-bold">3</i> items in your cart</p>
-                            <table id="shoppingCart" class="table table-condensed table-responsive">
-                                <thead>
-                                    <tr>
-                                        <th style="width:60%"><span class="sans-serif">Product</span></th>
-                                        <th style="width:12%"><span class="sans-serif">Price</span></th>
-                                        <th style="width:10%"><span class="sans-serif">Quantity</span></th>
-                                        <th style="width:16%"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-th="Product">
-                                            <div class="row">
-                                                <div class="col-md-3 text-left">
+                  <div class="multisteps-form__panel  p-5 shadow rounded bg-white js-active" data-animation="scaleIn">                    
+                        <div class="multisteps-form__content">
+                            <div class="col-lg-12 col-md-12 col-12 p-0 section-white">
+                                <h2 class="display-2 mb-2 text-center">Shopping Cart</h2>
+                                <p class="mb-5 text-center sans-serif">
+                                    <i class="sans-serif green font-weight-bold">3</i> items in your cart</p>
+                                <table id="shoppingCart" class="table table-condensed table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:60%"><span class="sans-serif">Product</span></th>
+                                            <th style="width:12%"><span class="sans-serif">Price</span></th>
+                                            <th style="width:10%"><span class="sans-serif">Quantity</span></th>
+                                            <th style="width:16%"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-th="Product">
+                                                <div class="row">
+                                                    <div class="col-md-3 text-left">
+                                                        <img src="/src/images/products/sauces/pesto/pesto.jpg" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                                    </div>
+                                                    <div class="col-md-9 text-left mt-sm-2">
+                                                        <h4>Product Name</h4>
+                                                        <p class="font-weight-light">Brand &amp; Name</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-th="Price"><span class="sans-serif">$7.99</span></td>
+                                            <td data-th="Quantity">
+                                                <input type="number" class="form-control form-control-lg text-center" value="1">
+                                            </td>
+                                            <td class="actions" data-th="">
+                                                <div class="text-right ">
+                                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                                        <i class="fa fa-refresh"></i>
+                                                    </button>
+                                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-th="Product">
+                                                <div class="row">
+                                                    <div class="col-md-3 text-left">
                                                     <img src="/src/images/products/sauces/pesto/pesto.jpg" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                                    </div>
+                                                    <div class="col-md-9 text-left mt-sm-2">
+                                                        <h4>Product Name</h4>
+                                                        <p class="font-weight-light">Brand &amp; Name</p>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-9 text-left mt-sm-2">
-                                                    <h4>Product Name</h4>
-                                                    <p class="font-weight-light">Brand &amp; Name</p>
+                                            </td>
+                                            <td data-th="Price"><span class="sans-serif">$7.99</span></td>
+                                            <td data-th="Quantity">
+                                                <input type="number" class="form-control form-control-lg text-center" value="1">
+                                            </td>
+                                            <td class="actions" data-th="">
+                                                <div class="text-right ">
+                                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                                        <i class="fa fa-refresh"></i>
+                                                    </button>
+                                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
                                                 </div>
-                                            </div>
-                                        </td>
-                                        <td data-th="Price"><span class="sans-serif">$7.99</span></td>
-                                        <td data-th="Quantity">
-                                            <input type="number" class="form-control form-control-lg text-center" value="1">
-                                        </td>
-                                        <td class="actions" data-th="">
-                                            <div class="text-right ">
-                                                <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                                    <i class="fa fa-refresh"></i>
-                                                </button>
-                                                <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                                    <i class="fa fa-trash"></i>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-th="Product">
-                                            <div class="row">
-                                                <div class="col-md-3 text-left">
-                                                  <img src="/src/images/products/sauces/pesto/pesto.jpg" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                                  </div>
-                                                <div class="col-md-9 text-left mt-sm-2">
-                                                    <h4>Product Name</h4>
-                                                    <p class="font-weight-light">Brand &amp; Name</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-th="Product">
+                                                <div class="row">
+                                                    <div class="col-md-3 text-left">
+                                                    <img src="/src/images/products/sauces/pesto/pesto.jpg" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                                    </div>
+                                                    <div class="col-md-9 text-left mt-sm-2">
+                                                        <h4>Product Name</h4>
+                                                        <p class="font-weight-light">Brand &amp; Name</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                        <td data-th="Price"><span class="sans-serif">$7.99</span></td>
-                                        <td data-th="Quantity">
-                                            <input type="number" class="form-control form-control-lg text-center" value="1">
-                                        </td>
-                                        <td class="actions" data-th="">
-                                            <div class="text-right ">
-                                                <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                                    <i class="fa fa-refresh"></i>
-                                                </button>
-                                                <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                                    <i class="fa fa-trash"></i>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-th="Product">
-                                            <div class="row">
-                                                <div class="col-md-3 text-left">
-                                                  <img src="/src/images/products/sauces/pesto/pesto.jpg" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
-                                                  </div>
-                                                <div class="col-md-9 text-left mt-sm-2">
-                                                    <h4>Product Name</h4>
-                                                    <p class="font-weight-light">Brand &amp; Name</p>
+                                            </td>
+                                            <td data-th="Price"><span class="sans-serif">$7.99</span></td>
+                                            <td data-th="Quantity">
+                                                <input type="number" class="form-control form-control-lg text-center" value="1">
+                                            </td>
+                                            <td class="actions" data-th="">
+                                                <div class="text-right">
+                                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                                        <i class="fa fa-refresh"></i>
+                                                    </button>
+                                                    <button class="btn btn-white border-secondary bg-white btn-md mb-2">
+                                                        <i class="fa fa-trash"></i>
+                                                    </button>
                                                 </div>
-                                            </div>
-                                        </td>
-                                        <td data-th="Price"><span class="sans-serif">$7.99</span></td>
-                                        <td data-th="Quantity">
-                                            <input type="number" class="form-control form-control-lg text-center" value="1">
-                                        </td>
-                                        <td class="actions" data-th="">
-                                            <div class="text-right">
-                                                <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                                    <i class="fa fa-refresh"></i>
-                                                </button>
-                                                <button class="btn btn-white border-secondary bg-white btn-md mb-2">
-                                                    <i class="fa fa-trash"></i>
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="float-right text-right">
-                                        <h4>Subtotal:</h4>
-                                        <h1>$99.00</h1>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="float-right text-right">
+                                            <h4>Subtotal:</h4>
+                                            <h1>$99.00</h1>
+                                        </div>
                                     </div>
+                                </div>  
+                            </div>
+                            <div class="row mt-4 d-flex align-items-center">
+                                <div class="col-6 order-2 text-right">
+                                    <button class="btn btn-green  shadow pl-5 pr-5 js-btn-next" type="button" title="Next">Checkout</button>
                                 </div>
-                            </div>  
+                                <div class="col-6 mb-3 mb-m-1 order-1 text-md-left">
+                                    <a href="order.html"><i class="fa fa-arrow-left mr-2"></i> Continue Shopping</a>
+                                </div>
+                            </div>
                         </div>
+                   </div>
+                  <!--single form panel-->
+                  <div class="multisteps-form__panel shadow p-5 rounded bg-white" data-animation="scaleIn">
+                        <div class="col-12 col-md-8 col-lg-6 m-auto">   
+                                <h2 class="display-2 mb-4 text-center">Login/Register</h2>
+                                    <fieldset class="form-signin">
+                                        <div class="form-label-group mb-3">
+                                            <label for="inputEmail">Email address</label>
+                                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                        </div>
+                                        <div class="form-label-group mb-3">
+                                            <label for="inputPassword">Password</label>
+                                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        </div>
+                                        <div class="checkbox mb-3">
+                                            <label>
+                                                <input type="checkbox" value="remember-me"> Remember me
+                                            </label>
+                                        </div>
+                                        <div class="text-center">
+                                                <a class="my-2 btn btn-primary shadow btn-sm mr-2" href="#" role="button">Register</a>
+                                                <a class="my-2 btn btn-green shadow btn-sm mr-2 js-btn-next" href="#" role="button">Login</a>
+                                                <p class="mt-4"><a href="order.html"> Continue as Guest <i class="fa fa-arrow-right ml-2"></i></a></p>
 
-                        <div class="row mt-4 d-flex align-items-center">
+                                                <p class="mt-4"> <a href="#" class="js-btn-prev" type="button" title="Previous"><i class="fa fa-arrow-left mr-2 " ></i>Back to Cart</a></p>
+                                        </div>
+                                    </fieldset>
+                        </div> 
+                    </div>
+                  <!--single form panel-->
+                  <div class="multisteps-form__panel shadow p-5 rounded bg-white" data-animation="scaleIn">
+                    <div class="multisteps-form__content">
+                        <div class="">
+                            <div class="pb-5 text-center">
+                                <h2 class="display-2 mb-2 text-center">Payment</h2>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-4 order-md-2 mb-4">
+                                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                  <span class="text-muted">Your cart</span>
+                                  <span class="badge badge-secondary badge-pill">3</span>
+                                </h4>
+                                <ul class="list-group mb-3">
+                                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div>
+                                      <h6 class="my-0">Product name</h6>
+                                      <small class="text-muted">Brief description</small>
+                                    </div>
+                                    <span class="text-muted">$12</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div>
+                                      <h6 class="my-0">Second product</h6>
+                                      <small class="text-muted">Brief description</small>
+                                    </div>
+                                    <span class="text-muted">$8</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div>
+                                      <h6 class="my-0">Third item</h6>
+                                      <small class="text-muted">Brief description</small>
+                                    </div>
+                                    <span class="text-muted">$5</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between bg-light">
+                                    <div class="text-success">
+                                      <h6 class="my-0">Promo code</h6>
+                                      <small>EXAMPLECODE</small>
+                                    </div>
+                                    <span class="text-success">-$5</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between">
+                                    <span>Total (USD)</span>
+                                    <strong>$20</strong>
+                                  </li>
+                                </ul>
+                      
+                                <fieldset class="card p-2">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Promo code">
+                                    <div class="input-group-append mt-0 mt-md-2 mt-lg-0">
+                                      <button type="submit" class="btn btn-secondary">Redeem</button>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="col-md-8 order-md-1">
+                                <h4 class="mb-3">Shipping address</h4>
+                                <form class="needs-validation" novalidate>
+                                  <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                      <label for="firstName">First name</label>
+                                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                      <div class="invalid-feedback">
+                                        Valid first name is required.
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <label for="lastName">Last name</label>
+                                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                      <div class="invalid-feedback">
+                                        Valid last name is required.
+                                      </div>
+                                    </div>
+                                  </div>
+                      
+                      
+                                  <div class="mb-3">
+                                    <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                    <div class="invalid-feedback">
+                                      Please enter a valid email address for shipping updates.
+                                    </div>
+                                  </div>
+                      
+                                  <div class="mb-3">
+                                    <label for="address">Address</label>
+                                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                                    <div class="invalid-feedback">
+                                      Please enter your shipping address.
+                                    </div>
+                                  </div>
+                      
+                                  <div class="mb-3">
+                                    <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                                  </div>
+                      
+                                  <div class="row">
+                                    <div class="col-md-5 mb-3">
+                                      <label for="country">Country</label>
+                                      <select class="custom-select d-block w-100" id="country" required>
+                                        <option value="">Choose...</option>
+                                        <option>United States</option>
+                                      </select>
+                                      <div class="invalid-feedback">
+                                        Please select a valid country.
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                      <label for="state">State</label>
+                                      <select class="custom-select d-block w-100" id="state" required>
+                                        <option value="">Choose...</option>
+                                        <option>California</option>
+                                      </select>
+                                      <div class="invalid-feedback">
+                                        Please provide a valid state.
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                      <label for="zip">Zip</label>
+                                      <input type="text" class="form-control" id="zip" placeholder="" required>
+                                      <div class="invalid-feedback">
+                                        Zip code required.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr class="mb-4">
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="same-address">
+                                    <label class="custom-control-label" for="same-address">Billing address is the same as my shipping address</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="save-info">
+                                    <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                                  </div>
+                                  <hr class="mb-4">
+                      
+                                  <h4 class="mb-3">Payment</h4>
+                      
+                                  <div class="d-block my-3">
+                                    <div class="custom-control custom-radio">
+                                      <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                      <label class="custom-control-label" for="credit">Credit card</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                      <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                      <label class="custom-control-label" for="debit">Debit card</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                      <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                      <label class="custom-control-label" for="paypal">Paypal</label>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                      <label for="cc-name">Name on card</label>
+                                      <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                      <small class="text-muted">Full name as displayed on card</small>
+                                      <div class="invalid-feedback">
+                                        Name on card is required
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                      <label for="cc-number">Credit card number</label>
+                                      <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                      <div class="invalid-feedback">
+                                        Credit card number is required
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                      <label for="cc-expiration">Expiration</label>
+                                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                      <div class="invalid-feedback">
+                                        Expiration date required
+                                      </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                      <label for="cc-expiration">CVV</label>
+                                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                      <div class="invalid-feedback">
+                                        Security code required
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr class="mb-4">
+                                </fieldset>
+                              </div>
+                            </div>
+                        
+                          </div>
+                          <div class="row mt-4 d-flex align-items-center ">
                             <div class="col-6 order-2 text-right">
-                                <button class="btn btn-green  shadow pl-5 pr-5 js-btn-next" type="button" title="Next">Checkout</button>
+                                <button class="btn btn-green  shadow pl-5 pr-5 js-btn-next" type="button" title="Next">Continue</button>
                             </div>
                             <div class="col-6 mb-3 mb-m-1 order-1 text-md-left">
-                                <a href="order.html">
-                                <i class="fa fa-arrow-left mr-2"></i> Continue Shopping</a>
+                                <p class="mt-4"> <a href="order.html"><i class="fa fa-arrow-left mr-2"></i> Continue Shopping</a></p>
                             </div>
                         </div>
-                  </div>
-                  <!--single form panel-->
-                  <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
-                    <h3 class="multisteps-form__title">Your Address</h3>
-                    <div class="multisteps-form__content">
-                      <div class="form-row mt-4">
-                        <div class="col">
-                          <input class="multisteps-form__input form-control" type="text" placeholder="Address 1"/>
-                        </div>
-                      </div>
-                      <div class="form-row mt-4">
-                        <div class="col">
-                          <input class="multisteps-form__input form-control" type="text" placeholder="Address 2"/>
-                        </div>
-                      </div>
-                      <div class="form-row mt-4">
-                        <div class="col-12 col-sm-6">
-                          <input class="multisteps-form__input form-control" type="text" placeholder="City"/>
-                        </div>
-                        <div class="col-6 col-sm-3 mt-4 mt-sm-0">
-                          <select class="multisteps-form__select form-control">
-                            <option selected="selected">State...</option>
-                            <option>...</option>
-                          </select>
-                        </div>
-                        <div class="col-6 col-sm-3 mt-4 mt-sm-0">
-                          <input class="multisteps-form__input form-control" type="text" placeholder="Zip"/>
-                        </div>
-                      </div>
-                      <div class="button-row d-flex mt-4">
-                        <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
-                        <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
-                      </div>
                     </div>
                   </div>
                   <!--single form panel-->
-                  <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
-                    <h3 class="multisteps-form__title">Your Order Info</h3>
+                  <div class="multisteps-form__panel shadow p-5 rounded bg-white" data-animation="scaleIn">
                     <div class="multisteps-form__content">
-                      <div class="row">
-                        <div class="col-12 col-md-6 mt-4">
-                          <div class="card shadow-sm">
-                            <div class="card-body">
-                              <h5 class="card-title">Item Title</h5>
-                              <p class="card-text">Small and nice item description</p><a class="btn btn-primary" href="#" title="Item Link">Item Link</a>
+                        <div class="m-auto col-lg-6">
+                        <div class="pb-5 text-center">
+                            <h2 class="display-2 mb-2 text-center">Order Summary</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>Shipping Address</h3>
+                                <p>First Name<br />
+                                123 Address Lane<br />
+                                Apartment 11A<br />
+                                Naples, FL 33458</p>
                             </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-md-6 mt-4">
-                          <div class="card shadow-sm">
-                            <div class="card-body">
-                              <h5 class="card-title">Item Title</h5>
-                              <p class="card-text">Small and nice item description</p><a class="btn btn-primary" href="#" title="Item Link">Item Link</a>
+                            <div class="col-lg-6">
+                                <h3>Payment Method</h3>
+                                <p>Visa<br />
+                                Ending in XXXX<br />
+                                Apartment 11A<br />
+                                Naples, FL 33458</p>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="button-row d-flex mt-4 col-12">
-                          <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
-                          <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button>
+
+                        <table id="shoppingCart" class="table table-condensed table-responsive  w-100 table-sm">
+                            <thead class="w-100">
+                                <tr>
+                                    <th style="width:60%"><span class="sans-serif">Product</span></th>
+                                    <th style="width:12%"><span class="sans-serif">Price</span></th>
+                                    <th style="width:10%"><span class="sans-serif">Quantity</span></th>
+                                </tr>
+                            </thead>
+                            <tbody class="w-100">
+                                <tr class="w-100">
+                                    <td data-th="Product">
+                                        <div class="row">
+                                            <div class="col-md-12 text-left mt-sm-2">
+                                                <h4>Product Name</h4>
+                                                <p class="font-weight-light">Brand &amp; Name</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-th="Price"><span class="sans-serif">$7.99</span></td>
+                                    <td data-th="Quantity">
+                                        <span class="text-center">1</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Product">
+                                        <div class="row">
+                                            <div class="col-md-12 text-left mt-sm-2">
+                                                <h4>Product Name</h4>
+                                                <p class="font-weight-light">Brand &amp; Name</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-th="Price"><span class="sans-serif">$7.99</span></td>
+                                    <td data-th="Quantity">
+                                        <span class="text-center">1</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Product">
+                                        <div class="row">
+                                            <div class="col-md-12 text-left mt-sm-2">
+                                                <h4>Product Name</h4>
+                                                <p class="font-weight-light">Brand &amp; Name</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-th="Price"><span class="sans-serif">$7.99</span></td>
+                                    <td data-th="Quantity">
+                                        <span class="text-center">1</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <div class="row mt-4 d-flex align-items-center ">
+                            <div class="col-12 order-1 text-center">
+                                <button class="btn btn-green  shadow pl-5 pr-5 js-btn-next" type="button" title="Next">Confirm Payment</button>
+                            </div>
+                            <div class="col-12 mb-3 mb-m-1 order-2 text-center">
+                                <p class="mt-4"> <a href="order.html"><i class="fa fa-arrow-left mr-2"></i> Continue Shopping</a></p>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  <!--single form panel-->
-                  <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
-                    <h3 class="multisteps-form__title">Additional Comments</h3>
-                    <div class="multisteps-form__content">
-                      <div class="form-row mt-4">
-                        <textarea class="multisteps-form__textarea form-control" placeholder="Additional Comments and Requirements"></textarea>
-                      </div>
-                      <div class="button-row d-flex mt-4">
-                        <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button>
-                        <button class="btn btn-success ml-auto" type="button" title="Send">Send</button>
-                      </div>
                     </div>
+
                   </div>
                 </form>
                </div>
