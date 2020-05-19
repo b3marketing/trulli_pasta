@@ -55,9 +55,152 @@
     </header>       
 
         <!-- Content //////////////////////////////////////////////////////////////// -->
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
+            <div class="container-fluid page-title-template about-title "> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 mx-auto text-center text-md-left"> <!-- Larger outer margins -->
+                            <h1 class="text-white display-1 pb-4 headline mb-0">Contact</h1>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2 py-5">
+                        <!-- We're going to place the form here in the next step -->
+                        <form id="contact-form" method="post" action="contact.php" role="form">
 
+                            <div class="messages"></div>
+                            <div class="controls">
+                        
+                                <div class="row mt-5">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Firstname *</label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_lastname">Lastname *</label>
+                                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_need">Please specify your need *</label>
+                                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                <option value="General">General Information</option>
+                                                <option value="Request order status">Request order status</option>
+                                                <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                    </div>
+                                </div>
+                                <div class="row my-4">
+                                    <div class="col-md-12">
+                                        <p class="text-muted">
+                                            <strong>*</strong> These fields are required. Contact form template by
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </form> 
+    
+                    </div>
+    
+                </div>
+    
+            </div>
         </div>
+
+        <!-- Pre-Footer | Order A La Carte -->
+        <div class="container-fluid center-content-section bg-white">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-md-6 col-lg-4 col-md-12 my-auto">
+                        <h2 class="mb-1 display-2">
+                            Order À La Carté
+                        </h2>
+                        <p class="lead mb-3">Order how and when you want!</p>
+                        <p class="mb-3">
+                            We don’t believe in contracts. Keep your meals flexible! Our vacuum packed 
+                            meals are good for 15 Days in the refrigerator or up to 6 months in the freezer 
+                            so you can cook when you feel like it or dine deliciously with Trulli Pasta 
+                            when you don’t.</p>
+                        <a class="btn btn-sm shadow btn-light mt-3 mb-5" href="#" role="button">Start an Order</a>
+                    </div>
+                    <div class="col-md-12 col-lg-8 " >
+                        <div class="card-deck product-display">
+                            <div class="row">
+                                <div class="col  mb-5">
+                                    <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
+                                        <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.jpg" alt="Card image cap">
+                                        <div class="card-body mb-0 pb-0">
+                                            <h5 class="card-title">Pesto</h5>
+                                            <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
+                                        </div>
+                                        <div class="card-footer border-0 my-0 py-0 bg-transparent ">
+                                            <p class="text-center border-0"><a class="btn btn-primary shadow btn-sm" href="#" role="button">Order</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col  mb-5">
+                                    <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
+                                        <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.jpg" alt="Card image cap">
+                                        <div class="card-body mb-0 pb-0">
+                                            <h5 class="card-title">Pesto</h5>
+                                            <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
+                                        </div>
+                                        <div class="card-footer border-0 my-0 py-0 bg-transparent ">
+                                            <p class="text-center border-0"><a class="btn btn-primary shadow btn-sm" href="#" role="button">Order</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col  mb-5">
+                                    <div class="card bg-white border-0 rounded-0 shadow-sm product-card">
+                                        <img class="card-img-top border-0" src="/src/images/products/sauces/pesto/pesto.jpg" alt="Card image cap">
+                                        <div class="card-body mb-0 pb-0">
+                                            <h5 class="card-title">Pesto</h5>
+                                            <p class="card-text">The Fusilli pasta, also known as Rotini, is a short pasta with a spiral or corkscrew shape. </p>
+                                        </div>
+                                        <div class="card-footer border-0 my-0 py-0 bg-transparent ">
+                                            <p class="text-center border-0"><a class="btn btn-primary shadow btn-sm" href="#" role="button">Order</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
 
          <!-- Footer //////////////////////////////////////////////////////////////// -->
          <footer class="bg-primary text-white text-center text-lg-left">

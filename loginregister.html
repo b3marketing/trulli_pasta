@@ -55,8 +55,35 @@
     </header>       
     
         <!-- Content //////////////////////////////////////////////////////////////// -->
-        <div class="container-fluid">
-
+        <div class="container-fluid p-0">
+            <div class="container-fluid page-title-template login-title "> 
+                <div class="container">
+                    <div class="row">
+                        <div class=" mx-auto p-5 bg-white shadow"> <!-- Larger outer margins -->
+                            <h1 class=" display-2 pb-4 text-center headline mb-0">Login/Register</h1>
+                            <form class="form-signin mt-4 ">
+                                <div class="form-label-group mb-3">
+                                    <label for="inputEmail">Email address</label>
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                </div>
+                                <div class="form-label-group mb-3">
+                                    <label for="inputPassword">Password</label>
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                </div>
+                                <div class="checkbox mb-3">
+                                    <label>
+                                        <input type="checkbox" value="remember-me"> Remember me
+                                    </label>
+                                </div>
+                                <div class="text-center">
+                                        <a class="my-2 btn btn-primary shadow btn-sm mr-2" href="#" role="button">Register</a>
+                                        <a class="my-2 btn btn-green shadow btn-sm mr-2 js-btn-next" href="#" role="button">Login</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>  
+            </div>
         </div>
 
          <!-- Footer //////////////////////////////////////////////////////////////// -->

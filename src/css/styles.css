@@ -72,6 +72,13 @@ header, section, footer, aside, nav, main, article, figure {
   background-position: center;
   background-repeat: no-repeat; }
 
+.login-title {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("/src/images/alberobello-trulli-houses.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 150px; }
+
 nav {
   background-color: #fef9f0; }
 
@@ -124,6 +131,55 @@ nav {
   transition-duration: 1s;
   transition-timing-function: linear;
   transition-property: display; }
+
+.modal .nav-pills .nav-link.active, .modal .nav-pills .show > .nav-link {
+  background-color: #019D49;
+  color: #fff; }
+
+.modal .nav-pills .nav-link {
+  background-color: #F4A830;
+  color: #fff; }
+
+.modal .nav-pills .tab-description {
+  font-size: .65rem;
+  color: #F4A830;
+  text-transform: uppercase;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #F4A830;
+  background-color: #FDF1DD; }
+
+.modal .nav-pills .nav-link.active .tab-description, .modal .nav-pills .show > .nav-link .tab-description {
+  background-color: #fff;
+  color: #019D49;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #019D49;
+  background-color: #F4FFF9; }
+
+.modal .radio-select {
+  /* HIDE RADIO */
+  /* IMAGE STYLES */
+  /* CHECKED STYLES */ }
+  .modal .radio-select .radio-text {
+    font-size: .75rem;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(); }
+  .modal .radio-select img {
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(); }
+  .modal .radio-select [type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .modal .radio-select [type=radio] + img {
+    cursor: pointer; }
+  .modal .radio-select [type=radio]:checked + img {
+    outline: 4px solid #019D49;
+    color: #019D49; }
+  .modal .radio-select [type=radio]:checked + img + .radio-text {
+    color: #019D49; }
 
 .multisteps-form__progress {
   display: grid;
