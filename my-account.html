@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Trulli Pasta - Semolina</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+        <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/src/css/bootstrap.css">
+        <link rel="stylesheet" href="/src/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body class="ingredients-page">
+
+       <!-- Navigation //////////////////////////////////////////////////////////////// -->
+       <header>
+        <nav class="navbar sticky-top navbar-expand-lg shadow navbar-light">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/src/images/trulli-logo-horizontal.png" width="150" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-center text-lg-left">
+                    <li class="nav-item ">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/ingredients.html">Ingredients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/semolina.html">What is Semolina?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sans-serif text-uppercase pb-3 pb-lg-0" href="/loginregister.html">Login/Register</a>
+                    </li> 
+                    <li class="nav-item pt-3 pt-lg-0 pb-3 pb-lg-0">
+                        <a class="btn btn-green ml-lg-4 shadow "><i class="fa fa-shopping-cart mr-1"></i>Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>       
+
+        <!-- Content //////////////////////////////////////////////////////////////// -->
+        <div class="container-fluid p-0">
+            <div class="container-fluid page-title-template my-account-title "> 
+                <div class="container">
+                    <div class="row">
+                            <div class="col-lg-9 mx-auto text-center text-md-left"> <!-- Larger outer margins -->
+                                <h1 class="text-white display-1 pb-4 headline mb-0">My Account</h1>
+                            </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="container my-5 ">
+            <div class="row h-100">
+                <div class="col-lg-9 mx-auto bg-white p-3"> <!-- Larger outer margins -->
+                    <h2 class=" display-3 py-4 headline mb-0">My Orders</h2>
+
+                    <div class="table-responsive my-orders sans-serif">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Order #</th>
+                                <th scope="col">Order Date</th>
+                                <th scope="col">Delivery Address</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Reorder</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="accordion-toggle collapsed" id="accordion1" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                                    <td class="expand-button"></td>
+                                    <td class="pt-4">2235</td>
+                                    <td class="pt-4">May 7, 2020</td>
+                                    <td class="pt-4">123 Address Lane</td>
+                                    <td class="pt-4">Delivered</td>
+                                    <td class="pt-4">$45</td>
+                                    <td>                        
+                                        <a class="btn btn-green ml-lg-4 shadow ">Add to Cart</a>
+                                    </td>
+                                </tr>
+                                <tr class="hide-table-padding">
+                                    <td></td>
+                                    <td colspan="6">
+                                        <div id="collapseOne" class="collapse in p-3 sans-serif">
+                                            <div class="row collapsed-header">
+                                                <div class="col-6"><strong>Item</strong></div>
+                                                <div class="col-2"><strong>Price</strong></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">Pesto/Fettuccine </div>
+                                                <div class="col-2">$14</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">Pesto/Fettuccine </div>
+                                                <div class="col-2">$14</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">Pesto/Fettuccine </div>
+                                                <div class="col-2">$14</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="accordion-toggle collapsed" id="accordion2" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                    <td class="expand-button"></td>
+                                    <td class="pt-4">2235</td>
+                                    <td class="pt-4">May 7, 2020</td>
+                                    <td class="pt-4">123 Address Lane</td>
+                                    <td class="pt-4">Delivered</td>
+                                    <td class="pt-4">$45</td>
+                                    <td>                        
+                                        <a class="btn btn-green ml-lg-4 shadow ">Add to Cart</a>
+                                    </td>
+                                </tr>
+                                <tr class="hide-table-padding">
+                                    <td></td>
+                                    <td colspan="6">
+                                        <div id="collapseTwo" class="collapse in p-3 sans-serif">
+                                            <div class="row collapsed-header">
+                                                <div class="col-6"><strong>Item</strong></div>
+                                                <div class="col-2"><strong>Price</strong></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">Pesto/Fettuccine </div>
+                                                <div class="col-2">$14</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">Pesto/Fettuccine </div>
+                                                <div class="col-2">$14</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">Pesto/Fettuccine </div>
+                                                <div class="col-2">$14</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="accordion-toggle collapsed" id="accordion3" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+                                    <td class="expand-button"></td>
+                                    <td class="pt-4">2235</td>
+                                    <td class="pt-4">May 7, 2020</td>
+                                    <td class="pt-4">123 Address Lane</td>
+                                    <td class="pt-4">Delivered</td>
+                                    <td class="pt-4">$45</td>
+                                    <td>                        
+                                        <a class="btn btn-green ml-lg-4 shadow ">Add to Cart</a>
+                                    </td>
+                                </tr>
+                                <tr class="hide-table-padding">
+                                    <td></td>
+                                    <td colspan="6">
+                                        <div id="collapseThree" class="collapse in p-3 sans-serif">
+                                            <div class="row collapsed-header">
+                                                <div class="col-6"><strong>Item</strong></div>
+                                                <div class="col-2"><strong>Price</strong></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">Pesto/Fettuccine </div>
+                                                <div class="col-2">$14</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">Pesto/Fettuccine </div>
+                                                <div class="col-2">$14</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">Pesto/Fettuccine </div>
+                                                <div class="col-2">$14</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5 ">
+            <div class="row h-100">
+                <div class="col-lg-9 mx-auto bg-white p-3"> <!-- Larger outer margins -->
+                    <h2 class=" display-3 py-4 headline mb-0">Addresses</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3>Billing Address</h3>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-green ml-lg-4 shadow"><i class="fa fa-edit mr-1"></i>Edit</a>
+                                </div>
+                            </div>
+                            <p>Customer Name</br>
+                            123 Address Lane</br>
+                            Apt. 11A</br>
+                            Jupiter, FL 33458</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3>Shipping Address</h3>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-green ml-lg-4 shadow"><i class="fa fa-edit mr-1"></i>Edit</a>
+                                </div>
+                            </div>
+                            <p>Customer Name</br>
+                            123 Address Lane</br>
+                            Apt. 11A</br>
+                            Jupiter, FL 33458</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5 ">
+            <div class="row h-100">
+                <div class="col-lg-9 mx-auto bg-white p-3"> <!-- Larger outer margins -->
+                    <h2 class=" display-3 py-4 headline mb-0">Payment Method</h2>
+                    <div class="table-responsive">
+                        <table class="payment-method table-responsive table sans-serif">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <span>Method</span>
+                                    </th>
+                                    <th>
+                                        <span>Details</span>
+                                    </th>
+                                    <th>
+                                        <span>Expires</span>
+                                    </th>
+                                    <th>
+                                        <span>Default?</span>
+                                    </th>
+                                    <th>
+                                        <span>Actions</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="" data-title="Method">
+                                        <div class="view">Visa</div>
+                                        <div class="edit" style="display:none;">
+                                            <input type="text" class="nickname" name="nickname" value="" placeholder="Nickname">
+                                        </div>
+                                    </td>
+                                    <td class="" data-title="Details">
+                                        <img src="" alt="" title="" width="40" height="25">
+                                        • • • 7020</td>
+                                        <td class="" data-title="Expires">3/23</td>
+                                        <td class="" data-title="Default?">
+                                            <div class="view"></div>
+                                            <div class="edit" style="display:none;">
+                                            <input type="checkbox" class="default" name="default" value="yes">
+                                        </div>
+                                    </td>
+                                    <td class="" data-title="Actions">
+                                        <a href="#" class="edit-payment-method button">Edit</a>
+                                        <a href="#" class="save-payment-method button" style="display:none">Save</a>
+                                        <a href="#" class="button delete-payment-method" data-token-id="" data-action="delete">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        
+        <!-- Pre-Footer | Order A La Carte -->
+
+        <!-- Footer //////////////////////////////////////////////////////////////// -->
+        <footer class="bg-primary text-white text-center text-lg-left">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 col-lg-3 mb-3">
+                        <img src="/src/images/trulli-logo-horizontal-white.png" width="150" height="50" alt="">
+                        <p class="small mt-3 ml-2 sans-serif">© TRULLI PASTA 2020</p>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-3">
+                        <ul class="list-unstyled text-white">
+                            <li class="mb-3">
+                                <a class="text-white sans-serif" href="about.html">About</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="text-white sans-serif" href="order.html">Order</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="text-white sans-serif" href="contact.html">Contact</a>
+                            </li>
+                            <li class="mb-3">
+                                <a class="text-white sans-serif" href="termsconditions.html">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-3">
+                        <div class="row">
+                            <a class="col-12 mb-3 sans-serif" href="https://www.facebook.com/kitchen41"><i class="fa fa-facebook text-center mr-2"></i>Facebook</a>
+                            <a class="col-12 mb-3 sans-serif" href=""><i class="fa fa-twitter text-center mr-2"></i>Twitter</a>
+                            <a class="col-12 mb-3 sans-serif" href=""><i class="fa fa-instagram  text-center mr-2"></i>Instagram</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 mb-3 ">
+                        <p class="sans-serif">Subscribe to our newsletter</p>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-form-label sr-only">Email</label>
+                            <div class="col-8 col-lg-10 mx-auto ml-lg-0">
+                              <input type="email" class="form-control sans-serif" id="inputEmail3" placeholder="Email">
+                              <button type="submit" class="btn-sm btn-light mt-2 sans-serif text-uppercase">Submit</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-3">
+                        <p class="text-white sans-serif">123 Address Lane, Naples FL, 33457</p>
+                        <p><a class="text-white sans-serif" href="tel:+1-555-555-5555">555-555-5555</a></p>
+                        <p><a class="text-white sans-serif" href="mailto:info@trullipasta.com">info@trullipasta.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+                
+        
+                
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="/src/js/popper.min.js"></script>
+                <script src="/src/js/bootstrap.min.js"></script>
+                <script src="/src/js/scrollreveal.min.js"></script>
+                <script src="/src/js/script.js"></script>
+        
+            </body>
+        </html>

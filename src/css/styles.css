@@ -79,6 +79,12 @@ header, section, footer, aside, nav, main, article, figure {
   background-repeat: no-repeat;
   padding-bottom: 150px; }
 
+.my-account-title {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("/src/images/title-secondary-pasta.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 nav {
   background-color: #fef9f0; }
 
@@ -333,6 +339,28 @@ nav {
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
   color: #777; }
+
+.my-orders tr.hide-table-padding td {
+  padding: 0; }
+
+.my-orders .expand-button {
+  position: relative; }
+
+.my-orders .accordion-toggle .expand-button:after {
+  position: absolute;
+  left: .75rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  content: '-'; }
+
+.my-orders .accordion-toggle.collapsed .expand-button:after {
+  content: '+'; }
+
+.payment-method tr {
+  width: 100%; }
+
+.payment-method th {
+  width: 20%; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
