@@ -386,6 +386,8 @@
                             </div>
                             <div class="col-6 mb-3 mb-m-1 order-1 text-md-left">
                                 <p class="mt-4"> <a href="order.html"><i class="fa fa-arrow-left mr-2"></i> Continue Shopping</a></p>
+                                <p class="mt-4"> <a href="#" class="js-btn-prev" type="button" title="Previous"><i class="fa fa-arrow-left mr-2 " ></i>Back to Cart</a></p>
+
                             </div>
                         </div>
                     </div>
@@ -402,6 +404,7 @@
                                     <tr>
                                         <th style="width:60%"><span class="sans-serif">Product</span></th>
                                         <th style="width:12%"><span class="sans-serif">Price</span></th>
+                                        <th style="width:12%"><span class="sans-serif">Amount</span></th>
                                         <th style="width:10%"><span class="sans-serif">Quantity</span></th>
                                     </tr>
                                 </thead>
@@ -416,6 +419,7 @@
                                             </div>
                                         </td>
                                         <td data-th="Price"><span class="sans-serif">$7.99</span></td>
+                                        <td data-th="Price">3</td>
                                         <td data-th="Quantity">
                                             <span class="text-center">1</span>
                                         </td>
@@ -430,10 +434,12 @@
                                             </div>
                                         </td>
                                         <td data-th="Price"><span class="sans-serif">$7.99</span></td>
+                                        <td data-th="Price">3</td>
                                         <td data-th="Quantity">
                                             <span class="text-center">1</span>
                                         </td>
                                     </tr>
+                                    
                                     <tr>
                                         <td data-th="Product">
                                             <div class="row">
@@ -444,6 +450,7 @@
                                             </div>
                                         </td>
                                         <td data-th="Price"><span class="sans-serif">$7.99</span></td>
+                                        <td data-th="Price">3</td>
                                         <td data-th="Quantity">
                                             <span class="text-center">1</span>
                                         </td>
@@ -468,9 +475,9 @@
                             </div>
                         <div class="row mt-4 d-flex align-items-center ">
                             <div class="col-12 order-1 text-center">
-                                <button class="btn btn-green  shadow pl-5 pr-5 js-btn-next" type="button" title="Next">Confirm Payment</button>
-                            </div>
+                              <a class="btn btn-green shadow " href="my-account.html" role="button">Order</a>                            </div>
                             <div class="col-12 mb-3 mb-m-1 order-2 text-center">
+                                <p class="mt-4"> <a href="#" class="js-btn-prev" type="button" title="Previous"><i class="fa fa-arrow-left mr-2 " ></i>Back to Cart</a></p>
                                 <p class="mt-4"> <a href="order.html"><i class="fa fa-arrow-left mr-2"></i> Continue Shopping</a></p>
                             </div>
                         </div>
@@ -483,55 +490,55 @@
             </div>
           </div>
 
-        <!-- Footer //////////////////////////////////////////////////////////////// -->
-        <footer class="bg-primary text-white text-center text-lg-left">
-          <div class="container py-5">
-              <div class="row">
-                  <div class="col-12 col-lg-3 mb-3">
-                      <img src="/src/images/trulli-logo-horizontal-white.png" width="150" height="50" alt="">
-                      <p class="small mt-3 ml-2 sans-serif">© TRULLI PASTA 2020</p>
-                  </div>
-                  <div class="col-12 col-lg-2 mb-3">
-                      <ul class="list-unstyled text-white">
-                          <li class="mb-3">
-                              <a class="text-white sans-serif" href="about.html">About</a>
-                          </li>
-                          <li class="mb-3">
-                              <a class="text-white sans-serif" href="order.html">Order</a>
-                          </li>
-                          <li class="mb-3">
-                              <a class="text-white sans-serif" href="contact.html">Contact</a>
-                          </li>
-                          <li class="mb-3">
-                              <a class="text-white sans-serif" href="termsconditions.html">Terms & Conditions</a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="col-12 col-lg-2 mb-3">
-                      <div class="row">
-                          <a class="col-12 mb-3 sans-serif" href="https://www.facebook.com/kitchen41"><i class="fa fa-facebook text-center mr-2"></i>Facebook</a>
-                          <a class="col-12 mb-3 sans-serif" href=""><i class="fa fa-twitter text-center mr-2"></i>Twitter</a>
-                          <a class="col-12 mb-3 sans-serif" href=""><i class="fa fa-instagram  text-center mr-2"></i>Instagram</a>
+          <!-- Footer //////////////////////////////////////////////////////////////// -->
+            <footer class="bg-primary text-white text-center text-lg-left">
+              <div class="container py-5">
+                  <div class="row">
+                      <div class="col-12 col-lg-3 mb-3">
+                          <img src="/src/images/trulli-logo-horizontal-white.png" width="150" height="50" alt="">
+                          <p class="small mt-3 ml-2 sans-serif">© TRULLI PASTA 2020</p>
+                      </div>
+                      <div class="col-12 col-lg-2 mb-3">
+                          <ul class="list-unstyled text-white">
+                              <li class="mb-3">
+                                  <a class="text-white sans-serif" href="about.html">About</a>
+                              </li>
+                              <li class="mb-3">
+                                  <a class="text-white sans-serif" href="order.html">Order</a>
+                              </li>
+                              <li class="mb-3">
+                                  <a class="text-white sans-serif" href="contact.html">Contact</a>
+                              </li>
+                              <li class="mb-3">
+                                  <a class="text-white sans-serif" href="TOS.pdf">Terms of Service</a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="col-12 col-lg-2 mb-3">
+                          <div class="row">
+                              <a class="col-12 text-white social-logo mb-3 sans-serif" href="https://www.facebook.com/kitchen41"><i class="fa fa-facebook text-center mr-2"></i>Facebook</a>
+                              <a class="col-12 text-white social-logo mb-3 sans-serif" href=""><i class="fa fa-twitter text-center mr-2"></i>Twitter</a>
+                              <a class="col-12 text-white social-logo mb-3 sans-serif" href=""><i class="fa fa-instagram  text-center mr-2"></i>Instagram</a>
+                          </div>
+                      </div>
+                      <div class="col-12 col-lg-3 mb-3 ">
+                          <p class="sans-serif">Subscribe to our newsletter</p>
+                          <div class="form-group row">
+                              <label for="inputEmail3" class="col-form-label sr-only">Email</label>
+                              <div class="col-8 col-lg-10 mx-auto ml-lg-0">
+                                <input type="email" class="form-control sans-serif" id="inputEmail3" placeholder="Email">
+                                <button type="submit" class="btn-sm btn-light mt-2 sans-serif border-0 shadow text-uppercase">Submit</button>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="col-12 col-lg-2 mb-3">
+                          <p class="text-white sans-serif">123 Address Lane, Naples FL, 33457</p>
+                          <p><a class="text-white sans-serif" href="tel:+1-555-555-5555">555-555-5555</a></p>
+                          <p><a class="text-white sans-serif" href="mailto:info@trullipasta.com">info@trullipasta.com</a></p>
                       </div>
                   </div>
-                  <div class="col-12 col-lg-3 mb-3 ">
-                      <p class="sans-serif">Subscribe to our newsletter</p>
-                      <div class="form-group row">
-                          <label for="inputEmail3" class="col-form-label sr-only">Email</label>
-                          <div class="col-8 col-lg-10 mx-auto ml-lg-0">
-                            <input type="email" class="form-control sans-serif" id="inputEmail3" placeholder="Email">
-                            <button type="submit" class="btn-sm btn-light mt-2 sans-serif text-uppercase">Submit</button>
-                          </div>
-                        </div>
-                  </div>
-                  <div class="col-12 col-lg-2 mb-3">
-                      <p class="text-white sans-serif">123 Address Lane, Naples FL, 33457</p>
-                      <p><a class="text-white sans-serif" href="tel:+1-555-555-5555">555-555-5555</a></p>
-                      <p><a class="text-white sans-serif" href="mailto:info@trullipasta.com">info@trullipasta.com</a></p>
-                  </div>
               </div>
-          </div>
-      </footer>
+            </footer>
                 
         
                 

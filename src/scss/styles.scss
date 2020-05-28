@@ -266,6 +266,10 @@ header, section, footer, aside, nav, main, article, figure {
          color: $light-yellow;
      }
 
+     .white {
+         color: $white;
+     }
+
                 
      // Products Styles
     .product-display {
@@ -304,6 +308,8 @@ header, section, footer, aside, nav, main, article, figure {
     }
 
     .modal {    
+
+        
         .nav-pills .nav-link.active,  .nav-pills .show > .nav-link {
             background-color: $green;
             color: $white;

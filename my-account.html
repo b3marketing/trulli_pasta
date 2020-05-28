@@ -69,6 +69,14 @@
         <div class="container my-5 ">
             <div class="row h-100">
                 <div class="col-lg-9 mx-auto bg-white p-3"> <!-- Larger outer margins -->
+                    <h2 class="green text-center"><i class="fa fa-check mr-1"></i><br>Thank you</h2>
+                    <p class="text-green text-center">Your order was received.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5 ">
+            <div class="row h-100">
+                <div class="col-lg-9 mx-auto bg-white p-3"> <!-- Larger outer margins -->
                     <h2 class=" display-3 py-4 headline mb-0">My Orders</h2>
 
                     <div class="table-responsive my-orders sans-serif">
@@ -104,6 +112,8 @@
                                             <div class="row collapsed-header">
                                                 <div class="col-6"><strong>Item</strong></div>
                                                 <div class="col-2"><strong>Price</strong></div>
+                                                <div class="col-2"><strong>Add to Cart</strong></div>
+
                                             </div>
                                             <div class="row">
                                                 <div class="col-6">Pesto/Fettuccine </div>
@@ -138,6 +148,7 @@
                                             <div class="row collapsed-header">
                                                 <div class="col-6"><strong>Item</strong></div>
                                                 <div class="col-2"><strong>Price</strong></div>
+                                                <div class="col-2"><strong>Add to Cart</strong></div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-6">Pesto/Fettuccine </div>
@@ -206,7 +217,13 @@
                                     <h3>Billing Address</h3>
                                 </div>
                                 <div class="col-6">
-                                    <a href="#" class="btn btn-green ml-lg-4 shadow"><i class="fa fa-edit mr-1"></i>Edit</a>
+                                    <a class="btn btn-green ml-lg-4 shadow" 
+                                    href="#" 
+                                    role="button" 
+                                    data-toggle="modal" 
+                                    data-target="#orderModal" >
+                                    <i class="fa fa-edit mr-1"></i>Edit
+                                    </a>
                                 </div>
                             </div>
                             <p>Customer Name</br>
@@ -288,16 +305,176 @@
             </div>
         </div>
 
+        <div class="container my-5 ">
+            <div class="row h-100">
+                <div class="col-lg-9 mx-auto bg-white p-3"> <!-- Larger outer margins -->
+                    <h2 class=" display-3 py-4 headline">Login Information</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Username/Email</h3>
+                                <p>test@example.com</p>                   
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Password</h3>
+                                <p>*************</p>                      
+                            </div>
+                            <div class="col-12">
+                                <a class="btn btn-green shadow" 
+                                href="#" 
+                                role="button" 
+                                data-toggle="modal" 
+                                data-target="#passwordModal" >
+                                <i class="fa fa-edit mr-1"></i>Edit
+                                </a>            
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
 
 
 
+        <!-- Address Modal ///////////////////////////////////////////////////////////// -->
+        
+        <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl border-0" role="document">
+              <div class="modal-content border-0">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title" id="exampleModalLabel">Edit Shipping Address</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <br />
+
+                </div>
+                <div class="modal-body border-0">
+                    <div class="container-fluid">
+                        <fieldset class="p-2">
+                            <h4 class="mb-3">Shipping address</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                            Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                            Valid last name is required.
+                            </div>
+                        </div>
+                        </div>
+    
+    
+                        <div class="mb-3">
+                        <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                        </div>
+    
+                        <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                        </div>
+    
+                        <div class="mb-3">
+                        <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                        </div>
+    
+                        <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="country">Country</label>
+                            <select class="custom-select d-block w-100" id="country" required>
+                            <option value="">Choose...</option>
+                            <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                            Please select a valid country.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="state">State</label>
+                            <select class="custom-select d-block w-100" id="state" required>
+                            <option value="">Choose...</option>
+                            <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                            Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="zip">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                            Zip code required.
+                            </div>
+                        </div>
+                        </div>
+                        </form>
+                    </fieldset>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" id="add-to-cart" class="btn btn-green shadow" data-dismiss="modal">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
+             <!-- Password Change Modal ///////////////////////////////////////////////////////////// -->
+        
+        <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md border-0" role="document">
+              <div class="modal-content border-0">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title" id="exampleModalLabel">Edit User Information</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <br />
+
+                </div>
+                <div class="modal-body border-0 mb-0  pb-0">
+                                                <h4 class="mb-3">Login Information</h4>
+
+                    <fieldset class="form-signin">
+                        <div class="form-label-group mb-3">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        </div>
+                        <div class="form-label-group mb-3">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" id="add-to-cart" class="btn btn-green shadow" data-dismiss="modal">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
         
         <!-- Pre-Footer | Order A La Carte -->
 
-        <!-- Footer //////////////////////////////////////////////////////////////// -->
-        <footer class="bg-primary text-white text-center text-lg-left">
+          <!-- Footer //////////////////////////////////////////////////////////////// -->
+          <footer class="bg-primary text-white text-center text-lg-left">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12 col-lg-3 mb-3">
@@ -316,15 +493,15 @@
                                 <a class="text-white sans-serif" href="contact.html">Contact</a>
                             </li>
                             <li class="mb-3">
-                                <a class="text-white sans-serif" href="termsconditions.html">Terms & Conditions</a>
+                                <a class="text-white sans-serif" href="TOS.pdf">Terms of Service</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-12 col-lg-2 mb-3">
                         <div class="row">
-                            <a class="col-12 mb-3 sans-serif" href="https://www.facebook.com/kitchen41"><i class="fa fa-facebook text-center mr-2"></i>Facebook</a>
-                            <a class="col-12 mb-3 sans-serif" href=""><i class="fa fa-twitter text-center mr-2"></i>Twitter</a>
-                            <a class="col-12 mb-3 sans-serif" href=""><i class="fa fa-instagram  text-center mr-2"></i>Instagram</a>
+                            <a class="col-12 text-white social-logo mb-3 sans-serif" href="https://www.facebook.com/kitchen41"><i class="fa fa-facebook text-center mr-2"></i>Facebook</a>
+                            <a class="col-12 text-white social-logo mb-3 sans-serif" href=""><i class="fa fa-twitter text-center mr-2"></i>Twitter</a>
+                            <a class="col-12 text-white social-logo mb-3 sans-serif" href=""><i class="fa fa-instagram  text-center mr-2"></i>Instagram</a>
                         </div>
                     </div>
                     <div class="col-12 col-lg-3 mb-3 ">
@@ -333,7 +510,7 @@
                             <label for="inputEmail3" class="col-form-label sr-only">Email</label>
                             <div class="col-8 col-lg-10 mx-auto ml-lg-0">
                               <input type="email" class="form-control sans-serif" id="inputEmail3" placeholder="Email">
-                              <button type="submit" class="btn-sm btn-light mt-2 sans-serif text-uppercase">Submit</button>
+                              <button type="submit" class="btn-sm btn-light mt-2 sans-serif border-0 shadow text-uppercase">Submit</button>
                             </div>
                           </div>
                     </div>
@@ -344,7 +521,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+          </footer>
                 
         
                 
